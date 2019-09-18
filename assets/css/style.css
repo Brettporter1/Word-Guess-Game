@@ -1,0 +1,35 @@
+body, html{
+    height:100vh;
+    font-family:'helvetica neue', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.entireContent{
+    position:relative;
+    background:rgba(0,0,0,0.6);
+    background-image:url(../images/mountain.png);
+    background-size:cover;
+}
+.theWord{
+    font-size:78px;
+    color:#fff;
+    position:absolute;
+    top:50%;
+    width:100%;
+    text-align:center;
+    text-transform:uppercase;
+
+}
+.counterContainer{
+    color:#fff;
+    width:60%;
+    height:300px;
+    margin:0px 20%;
+    text-align:center;
+    position:absolute;
+    bottom:0px;
+    display:flex;
+    justify-content: space-between;
+}
+.counterContainer h5{
+    font-size:36px;
+}

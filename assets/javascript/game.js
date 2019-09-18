@@ -1,9 +1,9 @@
-var wordChoices = ["carabiner", "rope", "belay", "harness", "whipper", ""];
+var wordChoices = ["carabiner", "rope", "belay", "harness", "whipper", "granite", ""];
 var selectedWord = "";
 var wordLetters = [];
-var numOfSpaces = [];
 var blankSpaces = [];
-var wrongGuess = [];
+var letterGuessed = "";
+var wrongGuesses = [];
 var wins = 0;
 var losses = 0;
 var numOfGuesses = 10;
@@ -23,12 +23,14 @@ function runGame() {
     for (var i = 0; i < wordLetters.length;i++){
         blankSpaces.push("_");
     }
+    // write spaces to the DOM
+    blankSpaces = blankSpaces.join(" ");
+    $(".theWord").text(blankSpaces);
+    $('.winCount').text('wins ' + wins);
+    $('.lossCount').text('losses ' + losses);
+    $('.guessesLeft').text('guesses ' + numOfGuesses);
 
-    $("#theWord").text(blankSpaces).join(" ");
-
-    console.log(selectedWord);
-    console.log(wordLetters);
-    console.log(blankSpaces);
 }
 
 runGame();
+
