@@ -1,4 +1,4 @@
-var wordChoices = ["carabiner", "rope", "belay", "harness", "whipper", "granite", ""];
+var wordChoices = ["carabiner", "rope", "belay", "harness", "whipper", "granite", "himalaya", "jumar", "summit", "crimp"];
 var selectedWord = "";
 var wordLetters = [];
 var blankSpaces = [];
@@ -30,7 +30,15 @@ function runGame() {
     $('.lossCount').text('losses ' + losses);
     $('.guessesLeft').text('guesses ' + numOfGuesses);
 
+    console.log(blankSpaces);
+    console.log(selectedWord);
+
 }
 
 runGame();
 
+document.onkeyup = function(event){
+    var letterGuessed = String.fromCharCode(event.keyCode).toLowerCase();        
+    console.log(letterGuessed);
+
+}
