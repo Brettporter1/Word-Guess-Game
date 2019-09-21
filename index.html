@@ -3,7 +3,6 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -11,19 +10,21 @@
         <header>
             <h1>CLIFFHANGER</h1>
             <h3>don't slip up on your guess!</h3>
+            <H2>THESE ARE WRONG: <span id="wrongLetters"></span></H2>
         </header>
         <section>
 
 
         </section>
         <section>
-            <h1 class="theWord"></h1>
+            <h1 id="theWord"></h1>
             <div class="guessContainer">
-                <h5 class="guessesLeft"></h5>
+                <h5>YOU HAVE <span id="guessesLeft"></span> GUESSES LEFT</h5>
+                
             </div>
             <div class="counterContainer">
-                <h5 class="winCount"></h5>
-                <h5 class="lossCount"></h5>
+                <h5>WINS <span id="winCount"></span></h5>
+                <h5>LOSSES <span id="lossCount"></span></h5>
             </div>
         </section>
     </div>

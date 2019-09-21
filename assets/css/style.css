@@ -25,10 +25,10 @@ header h1 {
     margin: 40px 0px 0px;
 }
 header h3 {
-
+    color:#fff;
 }
 /* style for spaces */
-.theWord{
+#theWord{
     font-size:78px;
     color:#fff;
     position:absolute;
@@ -48,11 +48,14 @@ header h3 {
     bottom:200px;
     font-size:42px;
 }
+#guessesLeft{
+    font-size:52px;
+}
 /* styles for the bottom counters wins and losses */
 .counterContainer{
     color:#fff;
     width:60%;
-    height:200px;
+    height:150px;
     margin:0px 20%;
     text-align:center;
     position:absolute;
