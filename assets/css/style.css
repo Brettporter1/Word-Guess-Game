@@ -15,6 +15,77 @@ body, html{
     background-image:url(../images/mountain.png);
     background-size:cover;
 }
+/* screen styles for wins and losses */
+.winScreen{
+        height:100%;
+        width:100%;
+        margin:0;
+        padding:0;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index:10;
+        background:rgba(62, 168, 218, 1.0);
+        background-image:url(../images/mountain.png);
+        background-size:cover;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: center;
+}
+.loseScreen{
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index:10;
+    background:rgb(184, 86, 30);
+    background-image:url(../images/mountain.png);
+    background-size:cover;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+.hide{
+    display:none;
+}
+.show{
+    display:visible;
+}
+#completeTitle{
+    text-align:center;
+    width:100%;
+    font-size:80px;
+    margin:200px auto 50px;
+    color:#fff;
+}
+#completeScreen h3{
+    text-align:center;
+    width:100%;
+    font-size:60px;
+    margin:0px auto;
+    color:#fff;
+}
+#wordWon{
+    text-align:center;
+    width:100%;
+    font-size:80px;
+    margin:0px auto;
+    color:#fff;
+    text-transform:uppercase;
+}
+#resetButton{
+    margin:25px auto;
+    background-color:#000;
+    font-size:16px;
+    color:#fff;
+    border:none;
+    border-radius:0px;
+    width:185px;
+    height:65px;
+}
 /* header style */
 header{
     text-align:center;

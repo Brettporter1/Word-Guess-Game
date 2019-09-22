@@ -8,14 +8,14 @@ var letterGuessed = "";
 var wrongGuesses = [];
 var wins = 0;
 var losses = 0;
-var numOfGuesses = 10;
+var numOfGuesses = 6;
 var letterInWord = false;
 
 
 // load the game function
 function runGame() {
     // set start values
-    numOfGuesses = 10;
+    numOfGuesses = 6;
     wrongGuesses = [];
     blankSpaces = [];
     // select random word
@@ -74,19 +74,27 @@ function findInWord(letter) {
 function winOrLose(){
     if(wordLetters.toString() === blankSpaces.toString()){
         wins++;
-        alert('Success!')
+        console.log(blankSpaces.toString());
+        document.getElementById("completeScreen").classList = "winScreen show"
+        document.getElementById("completeTitle").innerHTML = "YOU REACHED THE TOP";
+        document.getElementById("wordWon").innerHTML = blankSpaces.join("");
         document.getElementById("winCount").innerHTML = wins;
-        runGame();
+        wrongGuesses = [];
     }
     else if (numOfGuesses === 0){
         losses++;
-        alert('Mistakes are Costly!');
+        document.getElementById("completeScreen").classList = "loseScreen show"
+        document.getElementById("completeTitle").innerHTML = "THAT'S GONNA LEAVE A MARK";
+        document.getElementById("wordWon").innerHTML = wordLetters.join("");
         document.getElementById("lossCount").innerHTML = losses;
-        runGame();
+        wrongGuesses = [];
     }
 }
 
-
+function reset(){
+    document.getElementById("completeScreen").classList = "hide";
+    runGame();
+}
 
 
 // call functions
