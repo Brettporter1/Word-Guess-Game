@@ -1,6 +1,6 @@
 body, html{
     height:100vh;
-    font-family:'helvetica neue', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Roboto', 'helvetica neue', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .entireContent{
@@ -69,6 +69,7 @@ body, html{
     color:#fff;
 }
 #wordWon{
+    font-family:'Patrick Hand SC', sans-serif!important;
     text-align:center;
     width:100%;
     font-size:80px;
@@ -85,6 +86,7 @@ body, html{
     border-radius:0px;
     width:185px;
     height:65px;
+    font-weight: 700;
 }
 /* header style */
 header{

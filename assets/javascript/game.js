@@ -15,8 +15,8 @@ var letterInWord = false;
 // load the game function
 function runGame() {
     // set start values
-    numOfGuesses = 6;
     wrongGuesses = [];
+    numOfGuesses = 6;
     blankSpaces = [];
     // select random word
     var selectedWord = wordChoices[Math.floor(Math.random() * wordChoices.length)];
